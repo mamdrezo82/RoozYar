@@ -8,6 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./RoozYar # این خط به ربات می‌گوید فایل‌ها داخل این پوشه هستند
+
     steps:
       - name: Checkout Source Code
         uses: actions/checkout@v4
@@ -42,4 +46,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: RoozYar-APK
-          path: android/app/build/outputs/apk/debug/*.apk
+          path: RoozYar/android/app/build/outputs/apk/debug/*.apk
