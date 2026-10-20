@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./RoozYar # این خط به ربات می‌گوید فایل‌ها داخل این پوشه هستند
+        working-directory: ./RoozYar
 
     steps:
       - name: Checkout Source Code
@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20' # <--- اینجا تغییر کرد
 
       - name: Setup Java JDK 17
         uses: actions/setup-java@v4
