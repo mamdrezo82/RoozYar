@@ -19,13 +19,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # <--- اینجا تغییر کرد
+          node-version: '20'
 
-      - name: Setup Java JDK 17
+      - name: Setup Java JDK 21
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
+          java-version: '21' # <--- اینجا از 17 به 21 تغییر کرد
 
       - name: Install Dependencies
         run: npm install
