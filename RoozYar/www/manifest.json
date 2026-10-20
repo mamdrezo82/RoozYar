@@ -1,1 +1,12 @@
-{"name":"روز‌یار | دستیار شخصی","short_name":"روز‌یار","lang":"fa","dir":"rtl","start_url":"./index.html","display":"standalone","background_color":"#0b0e15","theme_color":"#10131c","description":"برنامه‌ریز شخصی برای عادت‌ها، کنکور، کارآموزی و اهداف"}
+{
+  "name": "روزیار | دستیار شخصی",
+  "short_name": "روزیار",
+  "description": "برنامه‌ریز شخصی فارسی با کارها، عادت‌ها، مطالعه و گزارش‌ها",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b0e15",
+  "theme_color": "#10131c",
+  "icons": [{"src":"app-icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

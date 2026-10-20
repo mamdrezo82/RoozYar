@@ -13,19 +13,20 @@
   <div class="app-shell">
     <header class="topbar">
       <div class="brand"><div class="brand-mark">ر</div><div><strong>روز‌یار</strong><small>دستیار رشد روزانه</small></div></div>
-      <button class="icon-btn" id="settingsShortcut" aria-label="تنظیمات">⚙</button>
+      <button class="app-icon-shortcut" data-go="home" aria-label="صفحه خانه"><img src="app-icon.svg" alt="آیکون روزیار" /></button>
     </header>
     <main id="view" class="view" aria-live="polite"></main>
     <nav class="bottom-nav" aria-label="ناوبری اصلی">
       <button data-page="home" class="nav-item active"><span>⌂</span><small>خانه</small></button>
       <button data-page="daily" class="nav-item"><span>✓</span><small>روزانه</small></button>
       <button data-page="calendar" class="nav-item"><span>▦</span><small>تقویم</small></button>
-      <button data-page="study" class="nav-item"><span>◫</span><small>کنکور</small></button>
-      <button data-page="more" class="nav-item"><span>•••</span><small>بیشتر</small></button>
+      <button data-page="modules" class="nav-item"><span>▦</span><small>بخش‌ها</small></button>
+      <button data-page="profile" class="nav-item"><span>◉</span><small>پروفایل</small></button>
     </nav>
   </div>
   <div id="toast" class="toast" role="status"></div>
-  <dialog id="modal" class="modal"><form method="dialog" id="modalForm"><div class="modal-head"><h3 id="modalTitle">افزودن</h3><button class="icon-btn" value="cancel" aria-label="بستن">✕</button></div><div id="modalBody"></div><div class="modal-actions"><button class="btn secondary" value="cancel">انصراف</button><button class="btn primary" id="modalSave" value="default">ذخیره</button></div></form></dialog>
+  <dialog id="modal" class="modal"><form method="dialog" id="modalForm"><div class="modal-head"><h3 id="modalTitle">افزودن</h3><button class="icon-btn" value="cancel" formnovalidate aria-label="بستن">✕</button></div><div id="modalBody"></div><div class="modal-actions"><button class="btn secondary" value="cancel" formnovalidate>انصراف</button><button class="btn primary" id="modalSave" value="default">ذخیره</button></div></form></dialog>
+  <script src="native-plugins.bundle.js"></script>
   <script type="module" src="app.js"></script>
 </body>
 </html>
